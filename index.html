@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In / Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="login">
+        <div class="text">
+            <h1 class="welcome">Welcome</h1>
+        </div>
+        <div class="form">
+            <form action="#" target="">
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="text" placeholder="Password" name="Password" required>
+                <button type="submit">
+                    Log in
+                </button>
+            </form>
+            <b style="text-align: center;">Forgot Password</b><br>
+            <div style="text-align: center;">
+                <span>Don't have an account?</span>
+                <b onclick="toggle()">Sign up here</b>
+            </div>
+        </div>
+    </div>
+
+    <div class="signin hidden">
+        <div class="text new ">
+            <h1 class="welcome">Join</h1>
+        </div>
+        <div class="form_signup">
+            <form action="#" target="" onsubmit="return checkPasswords()">
+                <input type="text" placeholder="First Name" name="First_Name" required>
+                <input type="text" placeholder="Last Name" name="Last_Name">
+                <input type="text" placeholder="Username" name="Username" id="username" required>
+                <input type="email" placeholder="Email" name="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input type="password" placeholder="Password" name="Password" id="password" minlength="8" required>
+                <input type="password" placeholder="Confirm password" name="Confirm_Password" id="confirm_password" minlength="8" required>
+                <button type="submit">
+                    Sign Up
+                </button>
+            </form><br>
+            <div style="text-align: center;">
+                <span>Already have an account?</span>
+                <b onclick="toggle1()">Log In here</b>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
